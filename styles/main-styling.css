@@ -1,0 +1,308 @@
+/* do not change */
+
+body {
+  font-family: Parkinsans, sans-serif;
+  line-height: var(--line-height-text);
+  margin: 0;
+}
+
+.milledoni-margin {
+  margin-inline: 2em;
+}
+
+/* header styling */
+
+.milledoni-header {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1em;
+}
+
+.milledoni-header-logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 5em;
+}
+
+.milledoni-header-logo-big-letters {
+  display: none;
+
+  @media (min-width: 678px) {
+    display: block;
+  }
+}
+
+.milledoni-header-logo-small-text {
+  display: none;
+
+  @media (min-width: 678px) {
+    display: block;
+  }
+}
+
+.milledoni-header-link-button {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid var(--user-chat-background-color);
+  background-color: var(--secondary-background-color);
+  border-radius: 2em;
+  text-decoration: none;
+  color: var(--secondary-color);
+  box-shadow: 0px 0px 10px var(--primary-background-color);
+  transition: 0.5s ease-out;
+}
+
+.milledoni-header-link-button:first-child {
+  margin-inline-end: 1em;
+}
+
+.milledoni-header-link-button:visited {
+  color: var(--secondary-color);
+}
+.milledoni-header-link-button:hover {
+  box-shadow: 0px 0px 10px var(--primary-background-color);
+}
+
+/* main styling */
+.milledoni-main {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    gap: 2em;
+
+    .milledoni-main-chat {
+      align-self: flex-end;
+    }
+  }
+}
+
+.milledoni-main-chat {
+  margin-block: 1em;
+}
+
+.milledoni-main-chat-input {
+  position: fixed;
+  bottom: 1em;
+  width: 85%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-background-color);
+  border-radius: 2em;
+
+  @media (min-width: 678px) {
+    width: 91%;
+  }
+
+  @media (min-width: 800px) {
+    position: relative;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    border-radius: 2em;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    background-color: var(--secondary-color);
+    color: var(--secondary-background-color);
+    border-radius: 50%;
+    border: none;
+    padding: 12px;
+  }
+
+  button:focus {
+    outline: none;
+    background-color: var(--sustainable-label-color);
+  }
+
+  button:active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+.milledoni-main-chat-input:focus-within {
+  outline: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.milledoni-main-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milledoni-main-product {
+  background-color: var(--primary-background-color);
+  padding-inline: 1em;
+  border-top: 6px solid var(--primary-color);
+
+  .bowtie-title {
+    text-align: center;
+  }
+}
+
+.milledoni-main-product-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-end: 1em;
+
+  @media (min-width: 678px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+/* footer styling */
+
+.milledoni-footer {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 2em;
+}
+.milledoni-footer-email {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2em;
+  padding-block: 1em;
+
+  .milledoni-footer-chat-input {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-background-color);
+    height: 3em;
+    width: 100%;
+
+    @media (forced-colors: active) {
+      border: 2px solid var(--secondary-background-color);
+    }
+
+    @media (min-width: 678px) {
+      width: 18em;
+    }
+
+    @media (min-width: 800px) {
+      width: 25em;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      background-color: var(--secondary-color);
+      color: var(--secondary-background-color);
+      border-radius: 50%;
+      border: none;
+      padding: 12px;
+    }
+
+    button:focus {
+      background-color: var(--sustainable-label-color);
+    }
+
+    button:active {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }
+  }
+
+  .milledoni-footer-chat-input:focus-within {
+    outline: 2px solid var(--secondary-color);
+  }
+
+  @media (min-width: 678px) {
+    flex-direction: row;
+  }
+}
+
+.milledoni-footer-black-background {
+  background-color: var(--secondary-color);
+  color: var(--secondary-background-color);
+}
+
+.milledoni-footer-info-links,
+.milledoni-footer-copyright {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2em;
+  margin-block: 1em;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  @media (min-width: 678px) {
+    flex-direction: row;
+    padding: 0;
+    margin-inline: 2em;
+  }
+}
+
+.milledoni-footer-info-logo a {
+  display: flex;
+  flex-direction: column;
+}
+
+.milledoni-footer-info-link-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-block: 1em;
+
+    @media (min-width: 678px) {
+      margin: 1em;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a {
+      transition: 0.5s ease-out;
+    }
+  }
+
+  a:hover {
+    color: var(--primary-color);
+  }
+}
+
+.milledoni-footer-info-link-list li a {
+  text-decoration: none;
+  color: var(--secondary-background-color);
+}
+
+.milledoni-footer-copyright-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  gap: 1em;
+  margin-block-start: 1em;
+
+  @media (min-width: 678px) {
+    flex-direction: row;
+  }
+}
+
+.milledoni-footer-logo-small-text {
+  width: 100%;
+}
