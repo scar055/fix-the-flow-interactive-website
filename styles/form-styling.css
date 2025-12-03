@@ -1,0 +1,60 @@
+body {
+  background-color: var(--primary-background-color);
+}
+form {
+  margin-inline: 1.5em;
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .submit-button {
+    width: fit-content;
+    margin-block-end: 1em;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-background-color);
+  border: none;
+  border-radius: 10px;
+  margin-block-end: 1em;
+  padding-block-start: 1em;
+
+  legend {
+    float: left;
+    font-size: var(--font-size-subject);
+    margin-block-end: 2em;
+  }
+
+  label {
+    padding-inline-end: 1em;
+    margin-block-end: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    max-width: 50ch;
+    width: 100%;
+    padding-left: 0;
+    padding-inline-start: 10px;
+  }
+
+  textarea {
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    max-width: 50ch;
+    width: 100%;
+    padding-left: 0;
+    padding-inline-start: 10px;
+  }
+}
+
+input[type="submit"] {
+  align-self: flex-end;
+}
