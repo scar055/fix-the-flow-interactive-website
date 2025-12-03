@@ -16,52 +16,53 @@ body {
   display: flex;
   justify-content: space-between;
   margin-block: 1em;
-}
 
-.milledoni-header-logo {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  width: 5em;
-}
-
-.milledoni-header-logo-big-letters {
-  display: none;
-
-  @media (min-width: 678px) {
-    display: block;
+  .milledoni-header-logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 5em;
   }
-}
 
-.milledoni-header-logo-small-text {
-  display: none;
+  .milledoni-header-logo-big-letters {
+    display: none;
 
-  @media (min-width: 678px) {
-    display: block;
+    @media (min-width: 678px) {
+      display: block;
+    }
   }
-}
 
-.milledoni-header-link-button {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid var(--user-chat-background-color);
-  background-color: var(--secondary-background-color);
-  border-radius: 2em;
-  text-decoration: none;
-  color: var(--secondary-color);
-  box-shadow: 0px 0px 10px var(--primary-background-color);
-  transition: 0.5s ease-out;
-}
+  .milledoni-header-logo-small-text {
+    display: none;
 
-.milledoni-header-link-button:first-child {
-  margin-inline-end: 1em;
-}
+    @media (min-width: 678px) {
+      display: block;
+    }
+  }
 
-.milledoni-header-link-button:visited {
-  color: var(--secondary-color);
-}
-.milledoni-header-link-button:hover {
-  box-shadow: 0px 0px 10px var(--primary-background-color);
+  .milledoni-header-link-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid var(--user-chat-background-color);
+    background-color: var(--secondary-background-color);
+    border-radius: 2em;
+    text-decoration: none;
+    color: var(--secondary-color);
+    box-shadow: 0px 0px 10px var(--primary-background-color);
+    transition: 0.5s ease-out;
+  }
+
+  .milledoni-header-link-button:first-child {
+    margin-inline-end: 1em;
+  }
+
+  .milledoni-header-link-button:visited {
+    color: var(--secondary-color);
+  }
+
+  .milledoni-header-link-button:hover {
+    box-shadow: 0px 0px 10px var(--primary-background-color);
+  }
 }
 
 /* main styling */
@@ -81,6 +82,14 @@ body {
 
 .milledoni-main-chat {
   margin-block: 1em;
+
+  article {
+    display: none;
+  }
+
+  .visible-chat {
+    display: block;
+  }
 }
 
 .milledoni-main-chat-input {
@@ -108,6 +117,7 @@ body {
     border: none;
     border-radius: 2em;
   }
+
   input:focus {
     outline: none;
   }
@@ -172,6 +182,7 @@ body {
   flex-direction: column;
   margin-block-start: 2em;
 }
+
 .milledoni-footer-email {
   background-color: var(--primary-color);
   display: flex;
