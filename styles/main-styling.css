@@ -6,18 +6,18 @@ body {
   margin: 0;
 }
 
-.milledoni-margin {
+.margin {
   margin-inline: 2em;
 }
 
 /* header styling */
 
-.milledoni-header {
+.header {
   display: flex;
   justify-content: space-between;
   margin-block: 1em;
 
-  .milledoni-header-logo {
+  .header-logo {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -40,7 +40,7 @@ body {
     }
   }
 
-  .milledoni-header-link-button {
+  .header-link-button {
     display: inline-block;
     padding: 5px 10px;
     border: 1px solid var(--user-chat-background-color);
@@ -50,18 +50,19 @@ body {
     color: var(--secondary-color);
     box-shadow: 0px 0px 10px var(--primary-background-color);
     transition: 0.5s ease-out;
+
+
+    &:visited {
+      color: var(--secondary-color);
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 10px var(--primary-background-color);
+    }
   }
 
   .milledoni-header-link-button:first-child {
     margin-inline-end: 1em;
-  }
-
-  .milledoni-header-link-button:visited {
-    color: var(--secondary-color);
-  }
-
-  .milledoni-header-link-button:hover {
-    box-shadow: 0px 0px 10px var(--primary-background-color);
   }
 }
 
