@@ -24,7 +24,7 @@ body {
     width: 5em;
   }
 
-  .milledoni-header-logo-big-letters {
+  .header-logo-big-letters {
     display: none;
 
     @media (min-width: 678px) {
@@ -32,7 +32,7 @@ body {
     }
   }
 
-  .milledoni-header-logo-small-text {
+  .header-logo-small-text {
     display: none;
 
     @media (min-width: 678px) {
@@ -61,7 +61,7 @@ body {
     }
   }
 
-  .milledoni-header-link-button:first-child {
+  .header-link-button:first-child {
     margin-inline-end: 1em;
   }
 }
