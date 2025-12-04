@@ -67,7 +67,7 @@ body {
 }
 
 /* main styling */
-.milledoni-main {
+.main {
   display: flex;
   flex-direction: column;
 
@@ -75,26 +75,27 @@ body {
     flex-direction: row;
     gap: 2em;
 
-    .milledoni-main-chat {
+    .main-chat {
       align-self: flex-end;
+    }
+  }
+
+
+  .main-chat {
+    margin-block: 1em;
+
+    article {
+      display: none;
+    }
+
+    .visible-chat {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
 
-.milledoni-main-chat {
-  margin-block: 1em;
-
-  article {
-    display: none;
-  }
-
-  .visible-chat {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.milledoni-main-chat-input {
+.main-chat-input {
   position: fixed;
   bottom: 1em;
   width: 85%;
@@ -141,11 +142,11 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
   }
-}
 
-.milledoni-main-chat-input:focus-within {
-  outline: 2px solid var(--primary-color);
-  border-color: var(--primary-color);
+  &:focus-within {
+    outline: 2px solid var(--primary-color);
+    border-color: var(--primary-color);
+  }
 }
 
 .milledoni-main-product-container {
