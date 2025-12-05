@@ -92,6 +92,15 @@ body {
       display: flex;
       flex-direction: column;
     }
+
+    h1 {
+      font-weight: var(--font-weight-standard);
+
+      span {
+        display: block;
+        color: var(--primary-color);
+      }
+    }
   }
 }
 
