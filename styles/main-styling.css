@@ -70,6 +70,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @media (min-width: 800px) {
     flex-direction: row;
@@ -204,16 +205,8 @@ body {
   padding-inline: 2em;
   padding-block: 1em;
 
-  .milledoni-footer-chat-input {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--secondary-background-color);
-    height: 3em;
+  .primary-color-bg {
     width: 100%;
-
-    @media (forced-colors: active) {
-      border: 2px solid var(--secondary-background-color);
-    }
 
     @media (min-width: 678px) {
       width: 18em;
@@ -221,32 +214,6 @@ body {
 
     @media (min-width: 800px) {
       width: 25em;
-    }
-
-    input {
-      width: 100%;
-      border: none;
-    }
-
-    input:focus {
-      outline: none;
-    }
-
-    button {
-      background-color: var(--secondary-color);
-      color: var(--secondary-background-color);
-      border-radius: 50%;
-      border: none;
-      padding: 12px;
-    }
-
-    button:focus {
-      background-color: var(--sustainable-label-color);
-    }
-
-    button:active {
-      background-color: var(--primary-color);
-      color: var(--secondary-color);
     }
   }
 
