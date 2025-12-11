@@ -88,8 +88,34 @@ body {
     }
 
     .visible-chat {
+      background: var(--secondary-text-color);
       display: flex;
       flex-direction: column;
+      padding: 1em;
+      border-radius: 2em;
+
+      button {
+        color: var(--secondary-background-color);
+        font-size: 1em;
+        background: none;
+        border: none;
+        padding: 0;
+        align-self: flex-end;
+      }
+
+      .user-bubble {
+        padding: 1em;
+        margin-block-end: 1em;
+        border-radius: 1em;
+        background: var(--user-chat-background-color);
+      }
+
+      .ai-bubble {
+        padding: 1em;
+        margin-block-end: 1em;
+        border-radius: 1em;
+        background: var(--primary-background-color);
+      }
     }
 
     h1 {
