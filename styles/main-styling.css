@@ -103,6 +103,10 @@ body {
         align-self: flex-end;
       }
 
+      .unselectable:hover {
+        background-color: var(--primary-color);
+      }
+
       .user-bubble {
         padding: 1em;
         margin-block-end: 1em;
