@@ -15,3 +15,12 @@ const closeChatButton = document.querySelector("button");
 closeChatButton.addEventListener("click", function () {
   document.querySelector("section article").classList.remove("visible-chat");
 });
+
+// zorgt er voor dat het form niet de pagina refreshed
+
+const formEnter = document.querySelector("form");
+
+formEnter.addEventListener("submit", function (e) {
+  document.querySelector("section article").classList.add("visible-chat");
+  e.preventDefault();
+});
