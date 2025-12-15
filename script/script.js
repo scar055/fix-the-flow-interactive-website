@@ -20,7 +20,7 @@ closeChatButton.addEventListener("click", function () {
 
 const formEnter = document.querySelector("form");
 
-formEnter.addEventListener("submit", function (e) {
+formEnter.addEventListener("submit", function (formSumbit) {
   document.querySelector("section article").classList.add("visible-chat");
-  e.preventDefault();
+  formSumbit.preventDefault();
 });
