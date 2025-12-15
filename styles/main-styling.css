@@ -113,6 +113,8 @@ body {
         margin-block-end: 1em;
         border-radius: 1em;
         background: var(--user-chat-background-color);
+        width: 25vh;
+        align-self: flex-end;
       }
 
       .ai-bubble {
@@ -120,6 +122,7 @@ body {
         margin-block-end: 1em;
         border-radius: 1em;
         background: var(--primary-background-color);
+        width: 25vh;
       }
     }
 
