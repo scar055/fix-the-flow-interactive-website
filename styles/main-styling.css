@@ -209,6 +209,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-block-end: 1em;
+  gap: 1em;
 
   @media (min-width: 678px) {
     display: grid;
