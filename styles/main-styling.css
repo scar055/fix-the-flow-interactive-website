@@ -134,6 +134,10 @@ body {
         color: var(--primary-color);
       }
     }
+
+    .invisible-heading {
+      display: none;
+    }
   }
 }
 
