@@ -80,9 +80,42 @@ body {
     }
   }
 
+  @keyframes --open-chat {
+    0% {
+      width: 2.5em;
+    }
+
+    50% {
+      width: 11em;
+      height: 2.5em;
+    }
+
+    100% {
+      width: 11em;
+      height: 11em;
+    }
+  }
+
 
   .main-chat {
     margin-block: 1em;
+    z-index: 2;
+    width: 88%;
+    position: fixed;
+    bottom: 0;
+
+    h1 {
+      display: none;
+    }
+
+    @media(min-width:1024px) {
+      position: sticky;
+      bottom: 1em;
+
+      h1 {
+        display: block;
+      }
+    }
 
     article {
       display: none;
@@ -94,6 +127,9 @@ body {
       flex-direction: column;
       padding: 1em;
       border-radius: 2em;
+      animation-name: --open-chat;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
 
       button {
         color: var(--secondary-background-color);
