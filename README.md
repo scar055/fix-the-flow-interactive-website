@@ -5,7 +5,7 @@ De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the
 
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-Milledoni chat
+## Milledoni chat
 
 ontwerp en maak een interactie voor de opdracht gever. Ik heb als interactie de chat na gemaakt.
 
@@ -13,9 +13,16 @@ ontwerp en maak een interactie voor de opdracht gever. Ik heb als interactie de 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+een link naar de [website](https://scar055.github.io/fix-the-flow-interactive-website/)
+
+https://github.com/user-attachments/assets/257d4003-434b-473a-8300-e36b7f5e7e9b
+
+Als je op de chat text input drukt dan open je het chat venster.
 
 
 ## Kenmerken
+
+
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
 css:
