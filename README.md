@@ -17,8 +17,12 @@ een link naar de [website](https://scar055.github.io/fix-the-flow-interactive-we
 
 https://github.com/user-attachments/assets/257d4003-434b-473a-8300-e36b7f5e7e9b
 
+
 Als je op de chat text input drukt dan open je het chat venster.
 
+https://github.com/user-attachments/assets/a2bacedd-8dc8-4f92-96f6-b8de26512be0
+
+een loading animation voor als de ai nog aan het denken is
 
 ## Kenmerken
 
