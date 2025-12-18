@@ -22,7 +22,7 @@ body {
 
     img:nth-of-type(1) {
       display: none;
-      width: 50vh;
+      width: 40vh;
 
       @media (min-width: 800px) {
         display: inline-block;
